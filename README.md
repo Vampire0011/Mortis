@@ -24,3 +24,4 @@ npm run build      # production build check
 
 ## Simulated / not real
 Login, privacy and confidentiality are browser-only. Certificate verification is a simulated faculty decision. "Signed" is a demo step, not a legal e-signature. Files are never uploaded; small images persist in localStorage, larger ones only for the session.
+[![Architecture diagram of vampire0011/mortis](https://gitdiagram.com/vampire0011/mortis/diagram.png)](https://gitdiagram.com/vampire0011/mortis?utm_source=readme&utm_medium=picture)
