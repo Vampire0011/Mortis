@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { min-height: 100%; }
+body { font-family: Inter, system-ui, 'Segoe UI', sans-serif; background: #F3F5FF; color: #0B0F1A; }
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2 text-sm font-bold transition disabled:opacity-50 disabled:cursor-not-allowed; }
+  .btn-primary { @apply bg-brand text-white hover:bg-deep; }
+  .btn-lime { @apply bg-lime text-black hover:brightness-95; }
+  .btn-outline { @apply border-2 border-ink/15 bg-white text-ink hover:border-brand hover:text-brand; }
+  .btn-danger { @apply bg-red-600 text-white hover:bg-red-700; }
+  .btn-sm { @apply px-3 py-1 text-xs; }
+  .card { @apply rounded-[1.5rem] border border-ink/5 bg-white p-5 shadow-sm; }
+  .input { @apply w-full rounded-xl border-2 border-ink/10 bg-white px-3 py-2 text-sm outline-none transition focus:border-brand; }
+  .label { @apply mb-1 block text-xs font-bold uppercase tracking-wide text-ink/60; }
+  .h-title { @apply font-display text-2xl uppercase tracking-tight md:text-3xl; }
+}
